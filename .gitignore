@@ -1,0 +1,5 @@
+__pycache__
+.env
+get_sql_data_from_natural_query.ipynb
+myinformation.db
+sql_queries.sql

@@ -1,0 +1,118 @@
+2025-08-01 12:24:03,537 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 12:24:03,725 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 12:47:04,055 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 12:47:29,723 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 12:47:29,802 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 12:48:16,261 - __main__ - INFO - Query result: {'sql_query': None, 'answer': 'Unable to process the query with the current context. Please review the input and try again.'}
+2025-08-01 12:51:26,959 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 12:51:27,037 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 12:52:05,710 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 12:52:05,826 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 12:53:57,262 - __main__ - INFO - Query result: {'sql_query': None, 'answer': 'Unable to process the query with the current context. Please review the input and try again.'}
+2025-08-01 20:51:34,390 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 20:51:34,452 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 20:59:19,224 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 20:59:19,311 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 20:59:51,227 - __main__ - INFO - Query result: {'sql_query': "SELECT e.grade \nFROM enrollments e \nJOIN students s ON e.student_id = s.id \nJOIN courses c ON e.course_id = c.id \nWHERE s.name = 'Niskriti Paudel' AND c.name = '<course_name>';", 'answer': "The query is designed to retrieve Niskriti's grades for specific courses. You need to provide the course name to get the exact grade."}
+2025-08-01 21:06:02,678 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 21:06:02,752 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 21:07:57,629 - __main__ - INFO - Query result: {'sql_query': None, 'answer': 'Unable to process the query with the current context. Please review the input and try again.'}
+2025-08-01 21:10:40,450 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 21:10:40,549 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 21:20:14,902 - __main__ - INFO - Streamlit app started
+2025-08-01 21:20:14,902 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:20:44,425 - __main__ - INFO - Streamlit app started
+2025-08-01 21:20:44,425 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:21:23,564 - __main__ - INFO - Streamlit app started
+2025-08-01 21:21:23,564 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:28:48,434 - __main__ - INFO - Streamlit app started
+2025-08-01 21:28:48,435 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:29:51,719 - __main__ - INFO - Streamlit app started
+2025-08-01 21:29:51,719 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:29:55,242 - __main__ - INFO - Streamlit app started
+2025-08-01 21:29:55,242 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:30:03,124 - __main__ - INFO - Streamlit app started
+2025-08-01 21:30:03,124 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:32:58,808 - __main__ - INFO - Streamlit app started
+2025-08-01 21:32:58,808 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:33:17,932 - __main__ - INFO - Streamlit app started
+2025-08-01 21:33:17,933 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:33:33,888 - __main__ - INFO - Streamlit app started
+2025-08-01 21:33:36,603 - __main__ - INFO - Streamlit app started
+2025-08-01 21:34:18,482 - __main__ - INFO - Streamlit app started
+2025-08-01 21:34:18,483 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:37:35,501 - __main__ - INFO - Streamlit app started
+2025-08-01 21:37:35,502 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:37:46,989 - __main__ - INFO - Streamlit app started
+2025-08-01 21:37:46,990 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:40:49,383 - __main__ - INFO - Streamlit app started
+2025-08-01 21:40:49,384 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:44:34,743 - __main__ - INFO - Streamlit app started
+2025-08-01 21:44:34,743 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:44:44,459 - __main__ - INFO - Streamlit app started
+2025-08-01 21:44:44,459 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:44:47,795 - __main__ - INFO - Streamlit app started
+2025-08-01 21:46:04,395 - __main__ - INFO - Streamlit app started
+2025-08-01 21:46:04,396 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:46:50,295 - __main__ - INFO - Streamlit app started
+2025-08-01 21:48:48,101 - __main__ - INFO - Streamlit app started
+2025-08-01 21:50:26,032 - __main__ - INFO - Streamlit app started
+2025-08-01 21:51:18,932 - __main__ - INFO - Streamlit app started
+2025-08-01 21:51:18,932 - __main__ - INFO - Initialized chat history.
+2025-08-01 21:52:17,987 - __main__ - INFO - Streamlit app started
+2025-08-01 21:53:08,961 - __main__ - INFO - Streamlit app started
+2025-08-01 21:54:21,992 - __main__ - INFO - Streamlit app started
+2025-08-01 21:54:25,081 - __main__ - INFO - Streamlit app started
+2025-08-01 21:55:18,967 - __main__ - INFO - Streamlit app started
+2025-08-01 21:57:17,850 - __main__ - INFO - Streamlit app started
+2025-08-01 21:57:50,855 - __main__ - INFO - Creating SQLAgent instance with connection string.
+2025-08-01 21:57:50,999 - __main__ - INFO - SQLAgent instance created successfully.
+2025-08-01 21:58:11,527 - __main__ - INFO - Query result: {'sql_query': 'SELECT s.name \nFROM students s \nJOIN student_scholarships ss ON s.id = ss.student_id;', 'answer': 'The students who got the scholarship are Niskriti Paudel, Meera Adhikari, and Roji Devkota.'}
+2025-08-01 21:58:39,476 - __main__ - INFO - Streamlit app started
+2025-08-01 21:58:39,477 - __main__ - INFO - Initialized chat history.
+2025-08-01 22:00:16,966 - __main__ - INFO - Streamlit app started
+2025-08-01 22:02:09,495 - __main__ - INFO - Streamlit app started
+2025-08-01 22:02:09,495 - __main__ - INFO - Initialized chat history.
+2025-08-01 22:02:57,715 - __main__ - INFO - Streamlit app started
+2025-08-01 22:03:05,378 - __main__ - INFO - Streamlit app started
+2025-08-01 22:03:50,007 - __main__ - INFO - Streamlit app started
+2025-08-01 22:03:50,008 - __main__ - INFO - Initialized chat history.
+2025-08-01 22:04:00,522 - __main__ - INFO - Streamlit app started
+2025-08-01 22:05:59,166 - __main__ - INFO - Streamlit app started
+2025-08-01 22:06:12,648 - __main__ - INFO - Streamlit app started
+2025-08-01 22:06:12,648 - __main__ - INFO - Initialized chat history.
+2025-08-01 22:07:13,336 - __main__ - INFO - Streamlit app started
+2025-08-01 22:09:06,591 - __main__ - INFO - Streamlit app started
+2025-08-02 13:27:37,412 - __main__ - INFO - Streamlit app started
+2025-08-02 13:27:37,412 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:27:47,371 - __main__ - INFO - Streamlit app started
+2025-08-02 13:29:50,419 - __main__ - INFO - Streamlit app started
+2025-08-02 13:30:11,470 - __main__ - INFO - Streamlit app started
+2025-08-02 13:30:11,470 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:30:19,281 - __main__ - INFO - Streamlit app started
+2025-08-02 13:32:23,888 - __main__ - INFO - Streamlit app started
+2025-08-02 13:32:23,889 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:32:35,854 - __main__ - INFO - Streamlit app started
+2025-08-02 13:33:12,180 - __main__ - INFO - Streamlit app started
+2025-08-02 13:33:43,835 - __main__ - INFO - Streamlit app started
+2025-08-02 13:33:43,836 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:34:02,724 - __main__ - INFO - Streamlit app started
+2025-08-02 13:34:05,573 - __main__ - INFO - Streamlit app started
+2025-08-02 13:34:45,206 - __main__ - INFO - Streamlit app started
+2025-08-02 13:36:44,070 - __main__ - INFO - Streamlit app started
+2025-08-02 13:36:54,805 - __main__ - INFO - Streamlit app started
+2025-08-02 13:36:54,805 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:37:04,557 - __main__ - INFO - Streamlit app started
+2025-08-02 13:37:35,533 - __main__ - INFO - Streamlit app started
+2025-08-02 13:38:19,854 - __main__ - INFO - Streamlit app started
+2025-08-02 13:38:19,855 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:38:34,043 - __main__ - INFO - Streamlit app started
+2025-08-02 13:38:41,772 - __main__ - INFO - Streamlit app started
+2025-08-02 13:40:20,936 - __main__ - INFO - Streamlit app started
+2025-08-02 13:40:20,937 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:40:33,011 - __main__ - INFO - Streamlit app started
+2025-08-02 13:40:33,011 - __main__ - INFO - Initialized chat history.
+2025-08-02 13:40:35,992 - __main__ - INFO - Streamlit app started
+2025-08-02 13:40:38,628 - __main__ - INFO - Streamlit app started
+2025-08-02 13:41:12,795 - __main__ - INFO - Streamlit app started
+2025-08-02 13:41:12,795 - __main__ - INFO - Initialized chat history.
