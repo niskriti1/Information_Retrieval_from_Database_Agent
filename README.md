@@ -1,5 +1,4 @@
 # Information_Retrieval_from_Database_Agent
-# Information_Retrieval_from_Database_Agent
 
 
 This project is a **LangGraph-based Information Retrieval Agent** built using [LangChain](https://docs.langchain.com/) and [LangGraph](https://docs.langchain.com/langgraph/). It allows users to query relational databases using natural language. The agent fetches relevant schema information, generates and validates SQL queries, and executes them on a SQLite database. It also includes detailed logging and error handling.
