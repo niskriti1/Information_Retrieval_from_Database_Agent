@@ -85,7 +85,6 @@ class SQLAgent:
     def __init__(
         self,
         connection_string: str,
-        api_key: str,
         model_name: str = "llama3-70b-8192",
     ):
         """
@@ -234,6 +233,34 @@ You will call the appropriate tool to execute the query after running this check
             ]
         )
         self.logger.info("Query checking prompt initialized.")
+
+        # Intent classification prompt
+        self.logger.info("Setting up intent classification prompt...")
+
+        self.intent_prompt = ChatPromptTemplate.from_messages(
+            [
+                (
+                    "system",
+                    """You are an intent classifier. Classify the user's input as:
+					- Greeting only (e.g: "Hello", "Hi there","Good Morning","Hello, I am <user>") 
+					- Query ("e.g: "What is the weather today?", "Show me the sales report for last month", "How many students are enrolled in the course?")
+
+					Respond only with:
+					- "greeting" if the input is a greeting
+					- "query" if the input is a query
+     
+					Examples:
+					- Input: "Hello, I am niskriti" → Output: "greeting"
+					- Input: "What is the weather today?" → Output: "query"
+					- Input: "List the courses in IT department" → Output: "query"
+					- Input: "Hi there" → Output: "greeting"
+					- Input: "Good Morning" → Output: "greeting"
+					""",
+                ),
+                ("human", "{input}"),
+            ]
+        )
+        self.logger.info("Intent classification prompt initialized.")
 
     def _create_tool_node_with_fallback(self, tools: list) -> RunnableWithFallbacks:
         """
@@ -465,6 +492,21 @@ Based on the user's question and available tables, call sql_db_schema with ALL p
             Dictionary containing the SQL query and answer
         """
         self.logger.info(f"Received query: {question}")
+
+        try:
+            self.logger.info("Classifying intent of the question...")
+            intent = self.intent_prompt | self.llm
+            intent_response = intent.invoke({"input": question})
+            intent = intent_response.content.strip().lower()
+            self.logger.info(f"Intent classification result: '{intent}'")
+            if intent == "greeting":
+                self.logger.info("Greeting detected. Responding directly.")
+                return {
+                    "sql_query": None,
+                    "answer": "Hello! How can I assist you today?",
+                }
+        except Exception as e:
+            self.logger.warning(f"Failed to classify intent: {e}. Proceeding as query.")
 
         try:
             messages = self.app.invoke({"messages": [HumanMessage(content=question)]})
