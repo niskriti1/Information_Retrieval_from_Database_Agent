@@ -85,6 +85,7 @@ class SQLAgent:
     def __init__(
         self,
         connection_string: str,
+        api_key: str,
         model_name: str = "llama3-70b-8192",
     ):
         """
